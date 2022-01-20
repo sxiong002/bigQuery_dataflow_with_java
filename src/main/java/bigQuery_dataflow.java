@@ -28,7 +28,7 @@ public class bigQuery_dataflow {
         dataflowOptions.setJobName("soa-xiong-java-capstone");
         dataflowOptions.setTempLocation("gs://york-project-bucket/soa-xiong/java/tmp");
         dataflowOptions.setStagingLocation("gs://york-project-bucket/soa-xiong/java/staging");
-        //dataflowOptions.setRunner(DataflowRunner.class);
+        dataflowOptions.setRunner(DataflowRunner.class);
 
 //        pipeline Creation and adding options parameter
         Pipeline p = Pipeline.create(dataflowOptions);
